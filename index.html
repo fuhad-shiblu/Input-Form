@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Input Form - Demo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+            font-family: "Caveat", cursive;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+            margin: 100px 0 50px 0;
+            overflow-x: hidden;
+        }
+        form{
+            width: 500px;
+            border: 1px solid #000;
+            border-radius: 50px;
+            padding: 10px;
+        }
+        form h1{
+            text-align: center;
+            font-weight: 900;
+            color: #000;
+            padding: 10px;
+            font-size: 50px;
+        }
+        form label{
+            font-size: 25px;
+            font-weight: 600;
+            padding-left: 10px;
+        }
+        form input{
+            width: 100%;
+            outline: none;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+        form button{
+            width: 100%;
+            padding: 10px;
+            font-size: 30px;
+            border: none;
+            background: #000;
+            color: #fff;
+            border-radius: 10px;
+            transition: all linear .1s;
+            margin-bottom: 10px;
+        }
+        form button:active{
+            transform: scale(1.1);
+        }
+        footer{
+            font-size: 25px;
+            font-weight: 100;
+            text-align: center;
+        }
+        footer a{
+            color: #000;
+            font-weight: 900 !important;
+            display: block;
+        }
+        footer a:hover{
+            text-decoration: underline;
+        }
+        .fa-heart{
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Input Form</h1>
+        <hr>
+        <br>
+        <br>
+        <label>First Name</label>
+        <br>
+        <br>
+        <input type="text" placeholder="Enter your First Name">
+        <br>
+        <br>
+        <label>Last Name</label>
+        <br>
+        <br>
+        <input type="text" placeholder="Enter your Last Name">
+        <br>
+        <br>
+        <label>E-Mail Address</label>
+        <br>
+        <br>
+        <input type="email" placeholder="Enter your E-Mail Address">
+        <br>
+        <br>
+        <label>Phone Number</label>
+        <br>
+        <br>
+        <input type="number" placeholder="Enter your Phone Number">
+        <br>
+        <br>
+        <label>Date of Birth</label>
+        <br>
+        <br>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+        </select>
+        <select>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+        <select>
+            <option>1999</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+        </select>
+        <br>
+        <br>
+        <label>Profile Picture</label>
+        <br>
+        <br>
+        <input type="file">
+        <br>
+        <br>
+        <label>Profile Theme</label>
+        <br>
+        <br>
+        <input type="color">
+        <br>
+        <br>
+        <label>Profile Range</label>
+        <br>
+        <br>
+        <input type="range">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset All</button>
+    </form>
+    <footer>Created with <i class="fa-solid fa-heart"></i> by <a href="https://github.com/fuhad-shiblu" target="_blank">Fuhad Hasan Shiblu</a></footer>
+</body>
+</html>
